@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+/*navbar*/
+#navbar {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar ul li {
+    margin: 0 15px;
+}
+#navbar ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+#navbar h1 {
+    padding: 20px;
+    float: left;
+}
+
