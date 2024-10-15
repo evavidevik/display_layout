@@ -8,8 +8,8 @@ body {
 }
 /*navbar*/
 #navbar {
-    background: #333;
-    color: white;
+    background: #4d0000;
+    color: antiquewhite;
     display: flex;
     justify-content: space-between;
 }
@@ -23,7 +23,7 @@ body {
     margin: 0 15px;
 }
 #navbar ul li a {
-    color: #fff;
+    color: antiquewhite;
     padding: 10px 15px;
     text-decoration: none;
 }
@@ -31,12 +31,92 @@ body {
     padding: 20px;
     float: left;
 }
-/*img*/
+
+/*animation*/
+.animatsioon {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    animation: bounce-in 2s ease-in-out;
+    transition: transform 1s ease;
+}
+.animatsioon:hover {
+    transform: rotate(360deg);
+}
+
+@keyframes bounce-in {
+    0% {unceIn
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*gallery*/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
 .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax (150px, 1fr))
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
 }
 img {
-    height: auto;
-    width: 100px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
+/*section*/
+#section1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.sissejuhatus {
+    padding: 40px;
+    background-color: #faebd7;
+}
+.kulgriba {
+    padding: 40px;
+    background-color: #d87571;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+    color: antiquewhite;
+    background-color: #4d0000;
+}
+.social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.social p, .social a {
+    margin-right: 10px;
+}
+
 
