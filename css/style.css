@@ -47,7 +47,7 @@ body {
 }
 
 @keyframes bounce-in {
-    0% {unceIn
+    0% {bounce-in
         transform: scale(0.1);
         opacity: 0;
     }
@@ -118,5 +118,3 @@ footer {
 .social p, .social a {
     margin-right: 10px;
 }
-
-
